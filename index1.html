@@ -1,0 +1,260 @@
+0<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCare 👐</title>
+    
+
+    <!-- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #090979, #020024);
+
+        }
+        h2{
+            color: #fff;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            background-color: white;
+            margin-top: 5%;
+            padding: 25px;
+            height: 500px;
+        }
+
+        .integerInput {
+            margin-right: 10px;
+        }
+
+        .userInput {
+            padding: 5px;
+            margin: 15px;
+        }
+
+        input,
+        select {
+            height: 28px;
+            width: 250px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+            padding: 5px;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        button {
+            display: block;
+            position: absolute;
+            top: 630px;
+            left: 478px;
+            margin-top: 30px;
+            padding: 10px;
+            width: 407px;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            background: linear-gradient(135deg,  #090979, #020024);
+        }
+
+        header h1 {
+            color: #fff;
+            border: none;
+            font-size: 40px;
+            font-weight: 500;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            align-items: center;
+        }
+
+        button:hover {
+            background: linear-gradient(-135deg,  #090979, #020024);
+        }
+
+        select {
+            margin-top: 8px;
+            height: 36px;
+        }
+
+
+        /* utils css */
+
+        .flex {
+            display: flex;
+        }
+
+        .justify-content {
+            justify-content: center;
+        }
+
+        .text-allign {
+            text-align: center;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .border {
+            border: 2px solid red;
+        }
+
+        .align-items {
+            align-items: center;
+        }
+
+        .flex-direction-c {
+            flex-direction: column;
+        }
+
+        .margin {
+            margin: auto;
+        }
+
+        header h1 {
+            margin-top: 50px;
+        }
+
+        .ml13 {
+            font-size: 1.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5em;
+            font-weight: 600;
+        }
+
+        .ml13 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <Header>
+        <h2>You are not alone, WeCare 👐</h2>
+        <h1 class="ml13">Let us get to know you !</h1>
+    </Header>
+    <form action="">
+        <div class="integerInput">
+            <div class="userInput ">
+                <p>Name</p>
+                <input type="text" required name="" id="">
+            </div>
+            <div class="userInput">
+                <p>Age</p>
+                <input type="number" required name="" id="">
+            </div>
+            <div class="encodedInput">
+                <div class="userInput">
+                    <p>Are you living alone?</p>
+                    <!-- <input type="text"> -->
+                    <select name="" id="">
+                        <option value="1">Yes</option>
+                            <option value="2">No</option>
+                    
+                    </select>
+                </div>
+                <div class="userInput">
+                    <p>On the count of 1 to 10 how low are you feeling?</p>
+                    <!-- <input type="text"> -->
+                    <input type="number" required name="" id="">
+                </div>
+                <div class="userInput">
+                    <p>Are you feeling absent minded?</p>
+                    <select name="" id="">
+                        <option value="1">Yes</option>
+                            <option value="2">No</option>
+                    
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="encodedInput">
+            <div class="userInput">
+                <p>Education</p>
+                <!-- <input type="text"> -->
+                <select name="" id="">
+                    <option value="PostG">Post Graduate</option>
+                        <option value="University">Graduate</option>
+                        <option value="Secondary">High School</option>  
+                        <option value="None">None</option>
+                    ​
+                </select>
+            </div>
+            <div class="userInput">
+                <p>Profession</p>
+                <!-- <input type="text"> -->
+                <select name="" id="">
+                    <option value="Unemployed">Unemployed</option>
+                    <option value="Service">Service</option>
+                    <option value="Student">Student</option>
+                </select>
+            </div>
+            <div class="userInput">
+                <p>Marital Status</p>
+                <!-- <input type="text"> -->
+                <select name="" id="">
+                    <option value="1">Married</option>
+                    <option value="2">Unmarried</option>
+                    
+                </select>
+
+            </div>
+        </div>
+        <button>Submit </button>
+    </form>
+    <!-- <script>
+        var textWrapper = document.querySelector('.ml13');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+                targets: '.ml13 .letter',
+                translateY: [0, -100],
+                opacity: [1, 0],
+                easing: "easeInExpo",
+                duration: 1200,
+                delay: (el, i) => 100 + 30 * i
+            });
+    </script> -->
+</body>
+
+</html>
